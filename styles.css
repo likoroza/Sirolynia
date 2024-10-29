@@ -8,34 +8,84 @@
     --button-hover-color: #a77143; /* Lighter brown for button hover */
 }
 
-/* Dark Theme Variables */
-body.dark-theme {
-    --bg-color: #e0e0e0; /* Light grey for background */
-    --text-color: #201513; /* Dark brown for text */
-    --nav-bg-color: #202020; /* Light grey for nav background */
-    --nav-text-color: #474342; /* Dark brown for nav text */
-    --button-bg-color: #a47139; /* Brown for buttons */
-    --button-hover-color: #c5944c; /* Lighter brown for button hover */
+/* Reset for HTML and Body */
+html, body {
+    height: 100%; /* Full height for body */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack header, main, and footer vertically */
 }
 
-/* Applying Theme Colors */
+/* Body Styles */
 body {
     font-family: 'Oldenburg', serif;
-    margin: 0;
-    padding: 0;
-    background: url('wallpaper.jpg') center/cover no-repeat; /* Set the background image */
-    color: var(--text-color);
+    color: var(--text-color); /* Text color */
+    background: url('wallpaper.jpg') center/cover no-repeat; /* Background image */
 }
 
-/* Language Switcher */
+/* Header Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* Opaque header */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Ensure it is positioned at the top */
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Align items vertically */
+    background-color: rgba(0, 0, 0, 0.8); /* Opaque navigation */
+    padding: 10px 20px; /* Adjust padding */
+}
+
 .language-switcher {
-    text-align: right;
-    padding: 10px;
-    background-color: var(--nav-bg-color);
-    color: var(--nav-text-color);
+    margin-right: auto; /* Push language switcher to the left */
 }
 
-/* Buttons */
+.nav-item {
+    color: var(--nav-text-color); /* Navigation text color */
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: rgba(50, 50, 50, 0.8); /* Hover effect */
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: rgba(0, 0, 0, 0.8); /* Opaque hero section */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1; /* Allow main to grow and take available space */
+    padding: 20px;
+    margin-top: 0; /* No space below the header */
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for sections */
+    padding: 15px;
+    border-radius: 5px; /* Rounded corners */
+    margin: 20px 0; /* Space between sections */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Opaque footer */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Button Styles */
 .language-switcher button, .cta {
     margin: 0 5px;
     background: var(--button-bg-color);
@@ -51,47 +101,7 @@ body {
     background: var(--button-hover-color);
 }
 
-/* Navigation */
-nav {
-    background: var(--nav-bg-color);
-    padding: 15px;
-    text-align: center;
-    font-family: 'Oldenburg', serif;
-}
-
-.nav-item {
-    margin: 0 15px;
-    color: var(--nav-text-color);
-    text-decoration: none;
-}
-
-/* Hero Section */
-.hero {
-    background: url('../images/hero-bg.jpg') center/cover no-repeat;
-    color: var(--nav-text-color);
-    padding: 100px 20px;
-    text-align: center;
-    border-top: 3px solid var(--button-bg-color);
-    border-bottom: 3px solid var(--button-bg-color);
-}
-
-.cta {
-    background: var(--button-bg-color);
-    padding: 10px 20px;
-    border: none;
-    color: var(--nav-text-color);
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Light theme transparency */
-    border: 3px solid var(--button-bg-color);
-}
-
-/* Headings */
+/* Headings Styles */
 h1, h2 {
     font-family: 'Cinzel', serif; /* Gothic-style font */
     color: var(--text-color);
@@ -101,6 +111,4 @@ h1, h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: var(--nav-bg-color);
-    color: var(--nav-text-color);
 }
