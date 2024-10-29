@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirolynia Club - Homepage</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/scripts.js"></script>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('he')">עברית</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About Us</a>
+        <a href="games.html" class="nav-item">Games Library</a>
+        <a href="events.html" class="nav-item">Events</a>
+        <a href="membership.html" class="nav-item">Membership</a>
+        <a href="community.html" class="nav-item">Community</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+        <a href="faq.html" class="nav-item">FAQ</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1 data-en="Where Strategy and Fun Collide!" data-he="איפה שהאסטרטגיה והכיף נפגשים!">Where Strategy and Fun Collide!</h1>
+        <button class="cta" onclick="navigateTo('membership.html')">Join the Club</button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="about">
+            <h2 data-en="About Us" data-he="עלינו">About Us</h2>
+            <p data-en="Welcome to Sirolynia, a haven for board game enthusiasts!" data-he="ברוכים הבאים לסירוליניה, בית חם לחובבי משחקי הקופסה!">Welcome to Sirolynia, a haven for board game enthusiasts!</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sirolynia Club</p>
+    </footer>
+</body>
+</html>
