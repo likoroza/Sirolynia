@@ -1,0 +1,85 @@
+/* Global Styles */
+body {
+    font-family: 'Oldenburg', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf0e6; /* Light parchment color */
+    color: #3e2723; /* Dark brown for readability */
+    background-image: url('../images/parchment-bg.jpg'); /* Parchment texture */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Language Switcher */
+.language-switcher {
+    text-align: right;
+    padding: 10px;
+    background-color: #6b4226; /* Dark brown */
+    color: #fff;
+}
+
+/* Buttons */
+.language-switcher button, .cta {
+    margin: 0 5px;
+    background: #8b5e3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'Oldenburg', serif;
+    border-radius: 5px;
+}
+
+.language-switcher button:hover, .cta:hover {
+    background: #a77143;
+}
+
+/* Navigation */
+nav {
+    background: #3e2723; /* Dark brown */
+    padding: 15px;
+    text-align: center;
+    font-family: 'Oldenburg', serif;
+}
+
+.nav-item {
+    margin: 0 15px;
+    color: #f5e6c8; /* Parchment white */
+    text-decoration: none;
+}
+
+.hero {
+    background: url('../images/hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    border-top: 3px solid #8b5e3c;
+    border-bottom: 3px solid #8b5e3c;
+}
+
+.cta {
+    background: #8b5e3c;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency for readability */
+    border: 3px solid #8b5e3c; /* Border for medieval feel */
+}
+
+h1, h2 {
+    font-family: 'Cinzel', serif; /* Gothic-style font */
+    color: #3e2723;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3e2723;
+    color: #f5e6c8;
+}
