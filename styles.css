@@ -1,28 +1,45 @@
-/* Global Styles */
+/* Global CSS Variables for Light and Dark Theme */
+:root {
+    --bg-color: #faf0e6; /* Light parchment */
+    --text-color: #0c0a08; /* Dark brown */
+    --nav-bg-color: #3e2723; /* Dark brown for nav */
+    --nav-text-color: #f5e6c8; /* Light cream for nav text */
+    --button-bg-color: #8b5e3c; /* Brown for buttons */
+    --button-hover-color: #a77143; /* Lighter brown for button hover */
+}
+
+/* Dark Theme Variables */
+body.dark-theme {
+    --bg-color: #e0e0e0; /* Light grey for background */
+    --text-color: #201513; /* Dark brown for text */
+    --nav-bg-color: #202020; /* Light grey for nav background */
+    --nav-text-color: #474342; /* Dark brown for nav text */
+    --button-bg-color: #a47139; /* Brown for buttons */
+    --button-hover-color: #c5944c; /* Lighter brown for button hover */
+}
+
+/* Applying Theme Colors */
 body {
     font-family: 'Oldenburg', serif;
     margin: 0;
     padding: 0;
-    background-color: #faf0e6; /* Light parchment color */
-    color: #3e2723; /* Dark brown for readability */
-    background-image: url('../images/parchment-bg.jpg'); /* Parchment texture */
-    background-size: cover;
-    background-attachment: fixed;
+    background: url('wallpaper.jpg') center/cover no-repeat; /* Set the background image */
+    color: var(--text-color);
 }
 
 /* Language Switcher */
 .language-switcher {
     text-align: right;
     padding: 10px;
-    background-color: #6b4226; /* Dark brown */
-    color: #fff;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
 }
 
 /* Buttons */
 .language-switcher button, .cta {
     margin: 0 5px;
-    background: #8b5e3c;
-    color: #fff;
+    background: var(--button-bg-color);
+    color: var(--nav-text-color);
     border: none;
     padding: 5px 10px;
     cursor: pointer;
@@ -31,12 +48,12 @@ body {
 }
 
 .language-switcher button:hover, .cta:hover {
-    background: #a77143;
+    background: var(--button-hover-color);
 }
 
 /* Navigation */
 nav {
-    background: #3e2723; /* Dark brown */
+    background: var(--nav-bg-color);
     padding: 15px;
     text-align: center;
     font-family: 'Oldenburg', serif;
@@ -44,42 +61,46 @@ nav {
 
 .nav-item {
     margin: 0 15px;
-    color: #f5e6c8; /* Parchment white */
+    color: var(--nav-text-color);
     text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
     background: url('../images/hero-bg.jpg') center/cover no-repeat;
-    color: #fff;
+    color: var(--nav-text-color);
     padding: 100px 20px;
     text-align: center;
-    border-top: 3px solid #8b5e3c;
-    border-bottom: 3px solid #8b5e3c;
+    border-top: 3px solid var(--button-bg-color);
+    border-bottom: 3px solid var(--button-bg-color);
 }
 
 .cta {
-    background: #8b5e3c;
+    background: var(--button-bg-color);
     padding: 10px 20px;
     border: none;
-    color: #fff;
+    color: var(--nav-text-color);
     font-weight: bold;
     cursor: pointer;
 }
 
+/* Main Content */
 main {
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Slight transparency for readability */
-    border: 3px solid #8b5e3c; /* Border for medieval feel */
+    background: rgba(255, 255, 255, 0.8); /* Light theme transparency */
+    border: 3px solid var(--button-bg-color);
 }
 
+/* Headings */
 h1, h2 {
     font-family: 'Cinzel', serif; /* Gothic-style font */
-    color: #3e2723;
+    color: var(--text-color);
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #3e2723;
-    color: #f5e6c8;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
 }
