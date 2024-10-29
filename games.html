@@ -8,31 +8,36 @@
     <script defer src="scripts.js"></script>
 </head>
 <body>
-    <!-- Language and Theme Switcher -->
-    <div class="language-switcher">
-        <button id="language-toggle" onclick="toggleLanguage()">עברית</button>
-        <button onclick="toggleTheme()">Toggle Theme</button>
-    </div>
     <nav>
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="about.html" class="nav-item">About Us</a>
-        <a href="games.html" class="nav-item">Games Library</a>
-        <a href="events.html" class="nav-item">Events</a>
-        <a href="membership.html" class="nav-item">Membership</a>
-        <a href="community.html" class="nav-item">Community</a>
-        <a href="contact.html" class="nav-item">Contact</a>
-        <a href="faq.html" class="nav-item">FAQ</a>
+        <div class="language-switcher">
+            <button id="language-toggle" onclick="toggleLanguage()">עברית</button>
+        </div>
+        <div class="nav-items">
+            <a href="index.html" class="nav-item" data-en="Home" data-he="בית">Home</a>
+            <a href="about.html" class="nav-item" data-en="About Us" data-he="עלינו">About Us</a>
+            <a href="games.html" class="nav-item" data-en="Games Library" data-he="ספריית משחקים">Games Library</a>
+            <a href="events.html" class="nav-item" data-en="Events" data-he="אירועים">Events</a>
+            <a href="membership.html" class="nav-item" data-en="Membership" data-he="חברות">Membership</a>
+            <a href="community.html" class="nav-item" data-en="Community" data-he="קהילה">Community</a>
+            <a href="contact.html" class="nav-item" data-en="Contact" data-he="צור קשר">Contact</a>
+            <a href="faq.html" class="nav-item" data-en="FAQ" data-he="שאלות נפוצות">FAQ</a>
+        </div>
     </nav>
-    <header class="hero">
+    <header>
         <h1 data-en="Games Library" data-he="ספריית המשחקים">Games Library</h1>
     </header>
     <main>
         <section>
-            <p data-en="Explore our extensive library of games, from classics to new hits!" data-he="גלה את ספריית המשחקים המגוונת שלנו, ממשחקים קלאסיים ועד חדשים!">Explore our extensive library of games, from classics to new hits!</p>
+            <h2>Featured Game</h2>
+            <div class="game">
+                <h3>Game Title</h3>
+                <p>Description of the game.</p>
+                <button class="cta">Learn More</button>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Sirolynia Club</p>
+        <p data-en="&copy; 2024 All rights reserved to Sirolynia Game Club and likopauytrh." data-he="&copy; 2024 כל הזכויות שמורות למועדון סירוליניה ולליקופאוטרך.">&copy; 2024 All rights reserved to Sirolynia Game Club and likopauytrh.</p>
     </footer>
 </body>
 </html>
